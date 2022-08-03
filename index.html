@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,9 @@
     <meta name="author" content="nicoelias997">
     <title>Ejercicios JS - DOM</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.scss">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-
+<body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -43,19 +43,21 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="buscador">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+
+
     <main>
         <section class="bg-dark text-light">
             <article class="container py-4">
-            <h1>Practica DOM</h1>
+            <h1 id="titulo">Practica DOM</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis sunt molestias fugiat magnam distinctio ad at nobis, reprehenderit ipsum ratione ut sequi facere. Debitis error ratione officiis rem quasi.</p>
-            <button class="btn btn-primary">
+            <button class="btn btn-primary" onclick="cambiarTitulo()">
                 Cambiar
             </button>
         </article>
@@ -63,16 +65,16 @@
         <section class="container my-5">
             <h2>Como crear elementos HTML desde JAVASCRIPT</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, harum. Deleniti fugit vero atque rem quisquam autem harum voluptas, aliquam voluptates sit enim modi ratione omnis sequi quam quas odit!</p>
-            <button class="btn btn-outline-primary">
+            <button class="btn btn-outline-primary" onclick="verMas()" id="boton">
                 Ver mas...
             </button>
 
         </section>
     </main>
-    <footer class="bg-dark text-ligth text-center py-4">
-
+    <footer class="bg-dark text-light text-center py-4">
+        <p>© Todos los derechos reservados</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script src="/js/proyectoClase.js"></script>
-
+</body>
 </html>
